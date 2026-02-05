@@ -1,0 +1,36 @@
+{
+  "name": "postcss-soft-comment-guard",
+  "version": "1.0.0",
+  "description": "Simple PostCSS workaround to keep comments under forced minification.",
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "css",
+    "comments"
+  ],
+  "homepage": "https://github.com/YamimakiReru/postcss-soft-comment-guard#readme",
+  "bugs": {
+    "url": "https://github.com/YamimakiReru/postcss-soft-comment-guard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YamimakiReru/postcss-soft-comment-guard.git"
+  },
+  "license": "MIT-0",
+  "author": "Reru YAMIMAKI <blended.in2.dark@gmail.com>",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "vitest": "^4.0.18"
+  }
+}
