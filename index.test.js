@@ -40,12 +40,12 @@ describe('postcss-soft-wrap/unwrap-comments', () => {
         /*! important */
       `
 
-      const wrapped = await postcss([
+      const result = await postcss([
         wrapComments({ magicPrefix: '!!TEST!!' }),
         unwrapComments({ magicPrefix: '!!TEST!!' })
       ]).process(input, { from: undefined })
 
-      expect(input.trim()).toBe(input.trim())
+      expect(result.css.trim()).toBe(input.trim())
     })
   })
 
@@ -88,12 +88,12 @@ describe('postcss-soft-wrap/unwrap-comments', () => {
         /*! important */
       `
 
-      const unwrapped = await postcss([
+      const result = await postcss([
         wrapComments(),
         unwrapComments()
       ]).process(input, { from: undefined })
 
-      expect(unwrapped.css.trim()).toBe(input.trim())
+      expect(result.css.trim()).toBe(input.trim())
     })
   })
 
@@ -137,13 +137,13 @@ describe('postcss-soft-wrap/unwrap-comments', () => {
         /*! important */
       `
 
-      const wrapped = await postcss([
+      const result = await postcss([
         wrapComments(),
         cssnano(),
         unwrapComments()
       ]).process(input, { from: undefined })
 
-      expect(input.trim()).toBe(input.trim())
+      expect(result.css.trim()).toBe(input.trim())
     })
   })
 })
