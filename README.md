@@ -17,7 +17,7 @@ npm install -D @ymmkrr/postcss-soft-comment-guard
 Add the plugins to your PostCSS configuration.
 
 ```js
-import { wrapComments, unwrapComments } from '@ymmkrr/postcss-soft-wrap-comments'
+import { wrapComments, unwrapComments } from '@ymmkrr/postcss-soft-comment-guard'
 
 export default {
   plugins: [
