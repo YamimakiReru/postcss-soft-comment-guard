@@ -1,5 +1,5 @@
 {
-  "name": "postcss-soft-comment-guard",
+  "name": "@ymmkrr/postcss-soft-comment-guard",
   "version": "1.0.0",
   "description": "Simple PostCSS workaround to keep comments under forced minification.",
   "keywords": [
@@ -20,9 +20,7 @@
   "author": "Reru YAMIMAKI <blended.in2.dark@gmail.com>",
   "type": "module",
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js", "README.md", "README.ja.md"],
   "scripts": {
     "test": "vitest run"
   },

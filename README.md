@@ -7,7 +7,7 @@ Simple PostCSS workaround to keep comments under forced minification.
 ## Installation
 
 ```sh
-npm install -D postcss-soft-comment-guard
+npm install -D @ymmkrr/postcss-soft-comment-guard
 ```
 
 ---
