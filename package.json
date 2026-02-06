@@ -1,6 +1,6 @@
 {
   "name": "@ymmkrr/postcss-soft-comment-guard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple PostCSS workaround to keep comments under forced minification.",
   "keywords": [
     "postcss",
