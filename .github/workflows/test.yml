@@ -1,4 +1,5 @@
 name: Scheduled Vitest with latest deps
+permissions: read-all
 
 on:
   schedule:
