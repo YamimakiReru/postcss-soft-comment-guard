@@ -1,0 +1,27 @@
+name: Scheduled Vitest with latest deps
+
+on:
+  schedule:
+    - cron: '11 4 * * 5,1,4'
+  push:
+    branches: [main]
+  workflow_dispatch:  # supports manual running
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install latest dependencies
+        run: npm install --no-save
+
+      - name: Run Vitest
+        run: npm run test -- --run

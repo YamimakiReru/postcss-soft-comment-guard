@@ -13,7 +13,7 @@ export function wrapComments(options = {}) {
 
     /**
      * Called once (per entrypoint) at the START of processing.
-     * @see https://postcss.org/api/#root
+     * @see https://postcss.org/api/#plugin-once
      * @param {Root} root
      */
     Once: (root) => {
@@ -37,7 +37,7 @@ export function unwrapComments(options = {}) {
 
     /**
      * Called once (per entrypoint) at the END of processing.
-     * @see https://postcss.org/api/#root
+     * @see https://postcss.org/api/#plugin-onceexit
      * @param {Root} root
      */
     OnceExit: (root) => {
