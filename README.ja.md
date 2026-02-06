@@ -83,7 +83,7 @@ body {
 '!!GUARD!!'
 ```
 
-`WrapComments` と `UnwrapComments` の双方に必ず同じ `magicPrefix` を指定してください。
+`wrapComments` と `unwrapComments` の双方に必ず同じ `magicPrefix` を指定してください。
 
 ---
 
